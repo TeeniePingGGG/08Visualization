@@ -16,6 +16,7 @@ univ_map.save('../saveFiles/univ_map.html')
 
 # 지도 데이터를 오름차순 정렬해서 인출
 sql = "select * from g_univ order by idx asc"
+
 cursor.execute(sql)
 for rs in cursor:
     idx = rs[0]
